@@ -6,3 +6,4 @@ services:
       - "7500:7600"
     volumes:
       - ./config.js:/usr/src/app/config.js      
+      - ./custom_secrets.js:/usr/src/app/custom_secrets.js      

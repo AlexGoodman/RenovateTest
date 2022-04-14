@@ -1,7 +1,9 @@
+var secrets = require('./custom_secrets');
+
 // https://docs.renovatebot.com/self-hosted-configuration/
 module.exports = {
     // endpoint: 'https://self-hosted.gitlab/api/v4/',
-    token: 'personal_access_token',
+    token: secrets.token, // personal access token for github,
     platform: 'github',
     onboardingConfig: {
         extends: ['config:base'],
